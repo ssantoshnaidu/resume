@@ -7,7 +7,7 @@
 
 /* Body styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -16,7 +16,7 @@ body {
 
 /* Container styles */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -27,8 +27,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 header h1 {
@@ -41,22 +40,65 @@ header p {
 }
 
 /* Section styles */
-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px;
+.section {
     margin-bottom: 30px;
 }
 
-section h2 {
+.section h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #007bff;
 }
 
-section p {
+.section p {
     margin-bottom: 15px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* Infographic styles */
+.infographic {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.infographic-item {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.infographic-item h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.infographic-item p {
+    font-size: 0.9em;
+    color: #666;
 }
 
 /* Footer styles */
@@ -66,12 +108,5 @@ footer {
     padding: 20px;
     background-color: #007bff;
     color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+    border-radius: 5px;
 }
