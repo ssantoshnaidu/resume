@@ -1,112 +1,166 @@
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 20px;
-}
-
-/* Container styles */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header styles */
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2.5em;
-}
-
-header p {
-    margin-bottom: 5px;
-}
-
-/* Section styles */
-.section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #007bff;
-}
-
-.section p {
-    margin-bottom: 15px;
-}
-
-/* Grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-/* Card styles */
-.card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px;
-}
-
-.card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.card p {
-    margin-bottom: 10px;
-}
-
-/* Infographic styles */
-.infographic {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.infographic-item {
-    flex-basis: 30%;
-    text-align: center;
-}
-
-.infographic-item h4 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-}
-
-.infographic-item p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
+  }
+  html {
+    height: 100%;  
+  }
+  
+  body {
+    min-height: 100%;  
+    background: #eee;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 50px;
+  }
+  
+  .container {
+    max-width: 700px;   
+    background: #fff;
+    margin: 0px auto 0px; 
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;  
+    padding: 40px;
     margin-top: 50px;
-    padding: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-}
+  }
+  
+  .header {
+    margin-bottom: 30px;
+    
+    .full-name {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .first-name {
+      font-weight: 700;
+    }
+    
+    .last-name {
+      font-weight: 300;
+    }
+    
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    
+    .email ,
+    .phone {
+      color: #999;
+      font-weight: 300;
+    } 
+    
+    .separator {
+      height: 10px;
+      display: inline-block;
+      border-left: 2px solid #999;
+      margin: 0px 10px;
+    }
+    
+    .position {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: underline;
+    }
+  }
+  
+  
+  .details {
+    line-height: 20px;
+    
+    .section {
+      margin-bottom: 40px;  
+    }
+    
+    .section:last-of-type {
+      margin-bottom: 0px;  
+    }
+    
+    .section__title {
+      letter-spacing: 2px;
+      color: #54AFE4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    
+    .section__list-item {
+      margin-bottom: 40px;
+    }
+    
+    .section__list-item:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    .left ,
+    .right {
+      vertical-align: top;
+      display: inline-block;
+    }
+    
+    .left {
+      width: 60%;    
+    }
+    
+    .right {
+      tex-align: right;
+      width: 39%;    
+    }
+    
+    .name {
+      font-weight: bold;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #000;
+      font-style: italic;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+    
+    .skills {
+      
+    }
+      
+    .skills__item {
+      margin-bottom: 10px;  
+    }
+    
+    .skills__item .right {
+      input {
+        display: none;
+      }
+      
+      label {
+        display: inline-block;  
+        width: 20px;
+        height: 20px;
+        background: #C3DEF3;
+        border-radius: 20px;
+        margin-right: 3px;
+      }
+      
+      input:checked + label {
+        background: #79A9CE;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
